@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import React from "react";
-import "./globals.css";
+import "./styles/globals.css";
 import { Inter } from "next/font/google";
 
 const inter = Inter({

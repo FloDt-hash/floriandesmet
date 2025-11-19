@@ -1,23 +1,13 @@
-import styles from "./page.module.css";
+import Approach from "@/components/Approach";
+import Hero from "@/components/Hero";
+import Services from "@/components/Services";
 
 export default function Home() {
   return (
     <main>
-      <div className={styles.hero}>
-        <h1>
-          Florian <span className={styles.name}>Desmet</span>
-        </h1>
-        <p className={styles.catchphrase}>
-          Développeur web freelance. Je vous accompagne dans vos projets web de
-          A à Z.
-        </p>
-        <div className="button-border-wrap">
-          <button className="call-to-action">
-            Parlons-en{" "}
-            <span className="material-symbols-outlined">arrow_outward</span>
-          </button>
-        </div>
-      </div>
+      <Hero />
+      <Approach />
+      <Services />
     </main>
   );
 }
