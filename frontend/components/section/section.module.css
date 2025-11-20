@@ -1,0 +1,24 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 2rem;
+  margin: 0 auto;
+  padding: 1rem var(--fluid-padding-mobile);
+  width: 100%;
+  max-width: 1024px;
+}
+
+.sectionTitle {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .section {
+    padding: 1rem var(--fluid-padding-desktop);
+  }
+}

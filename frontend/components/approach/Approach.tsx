@@ -1,13 +1,9 @@
-import styles from "../app/styles/page.module.css";
-import PrimaryButton from "./ui/PrimaryButton";
+import Button from "../button/Button";
+import Section from "../section/Section";
 
 export default function Approach() {
   return (
-    <div className={styles.approach}>
-      <div className={styles.titleGroup}>
-        <h2>Mon approche</h2>
-        <hr />
-      </div>
+    <Section title="Mon approche">
       <p>
         Votre projet mérite qu&apos;on prenne le temps de le comprendre. Je
         m&apos;investis pleinement pour saisir ce qui vous anime, vos objectifs
@@ -26,7 +22,7 @@ export default function Approach() {
           solidaires.
         </li>
       </ul>
-      <PrimaryButton>En savoir plus</PrimaryButton>
-    </div>
+      <Button>En savoir plus</Button>
+    </Section>
   );
 }

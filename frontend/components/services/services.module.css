@@ -1,0 +1,23 @@
+.servicesCardsGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.serviceCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 1rem;
+  padding: 0.75rem;
+  background-color: var(--background);
+  box-shadow: var(--box-shadow-2);
+}
+
+@media only screen and (min-width: 768px) {
+  .servicesCardsGroup {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

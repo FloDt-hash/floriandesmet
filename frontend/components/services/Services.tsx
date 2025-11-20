@@ -1,14 +1,11 @@
-import styles from "../app/styles/page.module.css";
-import ServiceCard from "./ui/ServiceCard";
+import styles from "./services.module.css";
+import Section from "../section/Section";
+import ServiceCard from "./ServiceCard";
 
 export default function Services() {
   return (
-    <div className={styles.services}>
-      <div className={styles.titleGroup}>
-        <h2>Services</h2>
-        <hr />
-      </div>
-      <div className={styles.cardsGroup}>
+    <Section title="Services">
+      <div className={styles.servicesCardsGroup}>
         <ServiceCard
           title="Création de site web"
           text="Vous n’avez pas encore de site ? Je crée votre site de A à Z, avec un design personnalisé et une approche sur-mesure."
@@ -22,6 +19,6 @@ export default function Services() {
           text="Votre site date de plusieurs années ? Je lui donne une seconde vie avec un design moderne, de meilleures performances et un référencement optimisé."
         />
       </div>
-    </div>
+    </Section>
   );
 }
