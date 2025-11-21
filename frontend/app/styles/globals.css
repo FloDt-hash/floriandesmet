@@ -1,31 +1,62 @@
-@import "material-symbols/outlined.css";
-
 :root {
   --turquoise: #4ecdc4;
   --red-coral: #ff6b6b;
+  --yellow-golden: #ffd166;
   --off-white: #f5f5f5;
 
   --color-primary: var(--turquoise);
   --color-secondary: var(--red-coral);
+  --color-highlight: var(--yellow-golden);
   --color-bg: var(--off-white);
 
   --text-primary: #1e1e1e;
   --text-light: #5c5c5c;
 
-  --gradient: linear-gradient(to right, #4ecdc4, #ff6b6b 75%, #ffd166 100%);
+  --linear-gradient: linear-gradient(
+    to right,
+    #4ecdc4,
+    #ff6b6b 75%,
+    #ffd166 100%
+  );
 
-  --fluid-title-hero-mobile: clamp(3.8125rem, -0.25rem + 20.3125vw, 9.5rem);
-  --fluid-title-hero-desktop: clamp(4.375rem, -3.125rem + 15.625vw, 6.875rem);
-  --fluid-h2: clamp(2.25rem, 1.9091rem + 1.7045vw, 3rem);
-  --fluid-h3: clamp(1.5rem, 1.0455rem + 2.2727vw, 2.5rem);
-  --fluid-padding-mobile: clamp(1.5rem, -3.8571rem + 14.2857vw, 3rem);
-  --fluid-padding-desktop: clamp(1rem, 9rem + -12.5vw, 3rem);
-  --fluid-text: clamp(1.25rem, 0.9091rem + 1.7045vw, 2rem);
-  --fluid-text-line-height: clamp(1.75rem, 1.2727rem + 2.3864vw, 2.8rem);
-  --fluid-text-button: clamp(1rem, 0.7727rem + 1.1364vw, 1.5rem);
+  --font-size-base: 1rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 1.75rem;
+  --font-size-4xl: 2rem;
+  --font-size-5xl: 2.25rem;
+  --font-size-9xl: 6rem;
 
-  --box-shadow-1: 2px 2px 4px 0 rgba(92, 92, 92, 0.1);
-  --box-shadow-2: 4px 4px 8px 0 rgba(92, 92, 92, 0.1);
+  --hero-title-fluid: clamp(
+    var(--font-size-4xl),
+    0.5455rem + 7.2727vw,
+    var(--font-size-9xl)
+  );
+  --hero-catchphrase-fluid: clamp(
+    var(--font-size-xl),
+    0.8864rem + 1.8182vw,
+    var(--font-size-5xl)
+  );
+  --h2-fluid: clamp(
+    var(--font-size-3xl),
+    1.5682rem + 0.9091vw,
+    var(--font-size-5xl)
+  );
+  --h3-fluid: clamp(
+    var(--font-size-xl),
+    1.1591rem + 0.4545vw,
+    var(--font-size-2xl)
+  );
+  --text-fluid: clamp(
+    var(--font-size-base),
+    0.9091rem + 0.4545vw,
+    var(--font-size-xl)
+  );
+
+  --border-light: rgba(92, 92, 92, 0.25);
+
+  --box-shadow-base: 2px 2px 4px 0 rgba(92, 92, 92, 0.1);
+  --box-shadow-xl: 4px 4px 8px 0 rgba(92, 92, 92, 0.1);
 }
 
 html,
@@ -35,7 +66,7 @@ body {
 }
 
 body {
-  background: var(--background);
+  background: var(--color-bg);
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -60,25 +91,20 @@ main {
   padding: 0 0 1rem 0;
 }
 
-h1 {
-}
-
 h2 {
+  font-size: var(--h2-fluid);
   font-weight: 600;
-  font-size: var(--fluid-h2);
 }
 
 h3 {
+  font-size: var(--h3-fluid);
   font-weight: 500;
-  font-size: var(--fluid-h3);
 }
 
 p,
 li {
-  font-size: var(--fluid-text);
+  font-size: var(--text-fluid);
   font-weight: 500;
-  line-height: var(--fluid-text-line-height);
-  color: var(--text-light);
 }
 
 ul {
@@ -87,9 +113,4 @@ ul {
 
 ul li::before {
   content: "✓ ";
-}
-
-.material-symbols-outlined {
-  font-variation-settings: "FILL" 0, "wght" 500, "GRAD" 0, "opsz" 20;
-  font-size: var(--fluid-text-button);
 }

@@ -1,33 +1,24 @@
 .button {
   font-family: Inter, Inter Fallback;
-  font-size: var(--fluid-text-button);
+  font-size: var(--text-fluid);
   font-weight: 500;
-  color: var(--text-light);
   display: flex;
   align-items: end;
   gap: 0.3rem;
   padding: 1rem;
   border: none;
-  background-color: var(--background);
+  background-color: var(--color-bg);
   border-radius: 0.13rem;
-  transition: color 0.8s, background-color 0.8s;
 }
 
 .buttonBorderWrap {
-  padding: 0.13rem;
+  padding: 0.125rem;
   position: relative;
-  background-image: var(--gradient);
+  background-image: var(--linear-gradient);
   border-radius: 0.13rem;
-  box-shadow: var(--box-shadow-1);
-}
-
-.buttonBorderWrap:hover {
-  background-image: var(--primary-color);
+  box-shadow: var(--box-shadow-base);
 }
 
 .buttonBorderWrap:hover > .button {
-  background-color: var(--color-primary);
-  color: var(--background);
   cursor: pointer;
-  transition: color 0.8s, background-color 0.8s;
 }
