@@ -53,6 +53,15 @@
     var(--font-size-xl)
   );
 
+  --padding-base: 1rem;
+  --padding-xl: 1.25rem;
+
+  --gap-sm: 0.75rem;
+  --gap-base: 1rem;
+  --gap-4xl: 2rem;
+  --gap-8xl: 4rem;
+  --gap-16xl: 8rem;
+
   --border-light: rgba(92, 92, 92, 0.25);
 
   --box-shadow-base: 2px 2px 4px 0 rgba(92, 92, 92, 0.1);
@@ -71,6 +80,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: var(--text-dark);
+  line-height: 1.4;
 }
 
 * {
@@ -87,8 +97,8 @@ a {
 main {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  padding: 0 0 1rem 0;
+  gap: var(--gap-8xl);
+  padding: 0 0 var(--padding-base) 0;
 }
 
 h2 {
@@ -104,7 +114,7 @@ h3 {
 p,
 li {
   font-size: var(--text-fluid);
-  font-weight: 500;
+  font-weight: 400;
 }
 
 ul {
@@ -113,4 +123,10 @@ ul {
 
 ul li::before {
   content: "✓ ";
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    gap: var(--gap-16xl);
+  }
 }

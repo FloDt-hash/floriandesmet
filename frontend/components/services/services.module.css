@@ -1,7 +1,7 @@
 .servicesCardsGroup {
   display: flex;
   flex-direction: column;
-  gap: 2.875rem;
+  gap: var(--gap-4xl);
 }
 
 .serviceCard {

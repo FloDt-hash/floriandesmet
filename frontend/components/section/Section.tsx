@@ -12,7 +12,7 @@ export default function Section({
     <div className={styles.section}>
       <div className={styles.sectionTitle}>
         <h2>{title}</h2>
-        <hr />
+        <div className={styles.hr}></div>
       </div>
       {children}
     </div>
