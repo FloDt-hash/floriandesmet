@@ -55,9 +55,12 @@
 
   --padding-base: 1rem;
   --padding-xl: 1.25rem;
+  --padding-2xl: 1.5rem;
+  --padding-8xl: 4rem;
 
   --gap-sm: 0.75rem;
   --gap-base: 1rem;
+  --gap-2xl: 1.5rem;
   --gap-4xl: 2rem;
   --gap-8xl: 4rem;
   --gap-16xl: 8rem;
