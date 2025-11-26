@@ -1,4 +1,4 @@
-import Button from "../button/Button";
+import Button from "../button/ButtonPrimary";
 import Section from "../section/Section";
 
 export default function Approach() {

@@ -1,5 +1,5 @@
 import styles from "./hero.module.css";
-import Button from "../button/Button";
+import ButtonPrimary from "../button/ButtonPrimary";
 
 export default function Hero() {
   return (
@@ -8,7 +8,7 @@ export default function Hero() {
       <p className={styles.catchphrase}>
         Je vous accompagne dans vos projets web de A à Z.
       </p>
-      <Button>Parlons-en</Button>
+      <ButtonPrimary>Parlons-en</ButtonPrimary>
     </div>
   );
 }

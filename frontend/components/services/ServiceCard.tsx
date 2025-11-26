@@ -1,5 +1,5 @@
 import styles from "./services.module.css";
-import Button from "../button/Button";
+import ButtonPrimary from "../button/ButtonPrimary";
 
 export default function ServiceCard({
   title,
@@ -12,7 +12,7 @@ export default function ServiceCard({
     <div className={styles.serviceCard}>
       <h3>{title}</h3>
       <p>{text}</p>
-      <Button>En savoir plus</Button>
+      <ButtonPrimary>En savoir plus</ButtonPrimary>
     </div>
   );
 }
