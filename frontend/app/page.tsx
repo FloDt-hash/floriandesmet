@@ -1,13 +1,13 @@
-import ApproachSection from "@/components/approach/Approach";
-import HeroSection from "@/components/hero/Hero";
-import ServicesSection from "@/components/services/Services";
+import Approach from "@/components/home/Approach";
+import Hero from "@/components/home/Hero";
+import Services from "@/components/home/Services";
 
 export default function Home() {
   return (
     <main>
-      <HeroSection />
-      <ApproachSection />
-      <ServicesSection />
+      <Hero />
+      <Approach />
+      <Services />
     </main>
   );
 }
